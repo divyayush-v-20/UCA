@@ -63,7 +63,6 @@ function renderProducts() {
     }
   
     initProductsListTable();
-    setTimeout(getProductsList, 5000);
+    setTimeout(getProductsList, 10);
   }
-  
   renderProducts();
