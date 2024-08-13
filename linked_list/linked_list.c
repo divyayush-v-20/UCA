@@ -32,3 +32,19 @@ void printList(){
 	}
 	free(tmp);
 }
+
+struct Node* getHead(){
+	return head;
+}
+
+void setNext(struct Node* cur, struct Node* nxt){
+	cur -> next = nxt;
+}
+
+struct Node* getNext(struct Node* cur){
+	return cur -> next;
+}
+
+void cout(struct Node* node){
+	printf("%d ", node -> val);
+}

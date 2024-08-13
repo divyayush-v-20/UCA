@@ -5,6 +5,8 @@ int main(){
 	push(2);
 	push(3);
 	push(4);
-	printList();
+	// printList();
+	struct Node* head = getHead();
+	struct Node* temp = getNext(head);
 	return 0;
 }
