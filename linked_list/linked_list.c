@@ -48,3 +48,11 @@ struct Node* getNext(struct Node* cur){
 void cout(struct Node* node){
 	printf("%d ", node -> val);
 }
+
+void setValue(struct Node* node, int val){
+	node -> val = val;
+}
+
+int getValue(struct Node* node){
+	return node -> val;
+}
