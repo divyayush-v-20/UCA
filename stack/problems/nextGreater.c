@@ -26,5 +26,8 @@ int main(){
     int* ans = nextGreater(arr, n);
     for(int i = 0; i < n; i++) printf("%d ", ans[i]);
 
+    free(arr);
+    free(ans);
+
     return 0;
 }

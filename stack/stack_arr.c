@@ -47,6 +47,10 @@ bool isEmpty(){
 	return N == 0;
 }
 
+int top(){
+	return array[N - 1];
+}
+
 int testStack(){
 	push(3);
 	push(5);
@@ -67,9 +71,9 @@ int testStack(){
 	assert(isEmpty());
 }
 
-int main(){
-	testStack();
-	return 0;
-}
+// int main(){
+// 	testStack();
+// 	return 0;
+// }
 
 
