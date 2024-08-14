@@ -5,3 +5,4 @@ int pop();
 int size();
 bool isEmpty();
 
+int top();

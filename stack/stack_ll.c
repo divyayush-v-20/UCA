@@ -35,6 +35,10 @@ int size(){
 	return N;
 }
 
+int top(){
+	if(!head) return INT_MIN;
+	return head -> item;
+}
 /*
  Node node = new Node();
  stack.push(node);
@@ -68,9 +72,3 @@ int testStack(){
 	assert(isEmpty());
 	
 }
-
-int main(){
-	testStack();
-	return 0;
-}
-
