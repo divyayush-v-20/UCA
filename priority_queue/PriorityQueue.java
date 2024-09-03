@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class PriorityQueue{
     private Integer[] pq;
     private int n;
