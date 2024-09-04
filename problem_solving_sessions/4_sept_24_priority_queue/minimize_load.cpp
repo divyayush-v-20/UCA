@@ -71,5 +71,8 @@ int main(){
     cout<<minimizeLoad(n, population, m);
 
     return 0;
-} // 10 20 30 40 50
-  //  1   1   2  3   3
+} 
+
+// 50 40 30 20 10
+// 3  3  2  1  1
+// ans = 20
