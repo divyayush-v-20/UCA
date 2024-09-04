@@ -23,13 +23,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int minLoad(int n, vector<int>& population, int m){
+int minimizeLoad(int n, vector<int>& population, int m){
     priority_queue<pair<int,int>> pq;
     for(int i : population){
         pq.push({i, 1});
         m--;
     }
-    
+
     vector<pair<int,int>> vec;
     
     while(!pq.empty()){
@@ -68,7 +68,7 @@ int main(){
     int m;
     cin >> m;
 
-    cout<<minLoad(n, population, m);
+    cout<<minimizeLoad(n, population, m);
 
     return 0;
 } // 10 20 30 40 50
