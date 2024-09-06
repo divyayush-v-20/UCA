@@ -24,18 +24,14 @@
 using namespace std;
 
 int minimizeLoad(int n, vector<int>& population, int m){
-    priority_queue<pair<int,int>> pq;
-    for(int i : population){
-        pq.push({i, 1});
-        m--;
-    }
-
     vector<pair<int,int>> vec;
-    
-    while(!pq.empty()){
-        vec.push_back(pq.top());
-        pq.pop();
+
+    for(int i : population){
+        vec.push_back({i, 1});
+        --m;
     }
+    sort(vec.rbegin(), vec.rend());
+    
     int index = 0;
     while(m > 0){
         if(index % n == 0){
